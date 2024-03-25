@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block title %} Hi! {% endblock %} {% block content
+%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col d-flex justify-content-center h2">
+      Welcome to our Pirat Cantor
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-2"></div>
+    <div class="col">
+      <img
+        src="{{url_for('static', filename='flag_pirat1.png')}}"
+        alt="flag"
+        class="rounded mx-auto d-block"
+      />
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-8 with-margin">
+      Cantor Pirat &trade; registered in Luxemburg
+    </div>
+    <div class="col-4 with-margin" style="text-align: right">&copy;2000</div>
+  </div>
+</div>
+
+{% endblock %}
